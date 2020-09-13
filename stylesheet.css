@@ -1,0 +1,151 @@
+html, body{height: 100%; margin: 0; z-index: 1;}
+
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+    width: 70%;
+    text-align: center;
+}
+
+.fixed-bg {
+    min-height: 100vh;
+    background-attachment: fixed;
+    /*background-size: cover;*/
+    background-position: center;
+    background-image: url("./img/bg_patt.png");
+    /*background-image: url("./img/webb.png");*/
+    background-repeat: repeat;
+}
+
+
+header{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.7);
+    z-index: 10;
+}
+
+.header-left{
+    float: left;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+    margin: 5px 0;
+    float: left;
+}
+
+/*
+.header-left h1{
+    font-family: "Hiragino Maru Gothic ProN";
+    font-size: 30px;
+    margin: 10px;
+    float: left;
+    color: #424242;
+}
+*/
+
+.header-list{
+    float: right;
+}
+
+.header-list li{
+    list-style: none;
+    text-align: center;
+    float: left;
+}
+
+.header-list a{
+    font-family: "Hiragino Maru Gothic ProN";
+    font-size: 18px;
+    text-decoration: none;
+    color: #424242;
+    display: block;
+    line-height: 70px;
+    padding: 0 30px;
+    transition: all 500ms;
+}
+
+.header-list a:hover{
+    /*background-color: #f36767;*/
+    background-color: #ffaf00;
+    color: white;
+}
+
+.top-banner-margin{
+    height: 70px;
+    background-image: url("./img/bg_patt.png");
+    background-repeat: repeat;
+}
+
+.top-banner{
+    /*background-color: #f36767;*/
+    background-image: url("./img/top-banner.jpg");
+    background-size: cover;
+    z-index: 1;
+    line-height: 0;
+    height: calc(100% - 70px);
+}
+
+.top-banner h1{
+    padding-top: 350px;
+    font-family: "Zapfino";
+    color: white;
+    color: #fff;
+}
+
+.about{
+    height: 100%;
+}
+
+.about-wrapper{
+    display: flex;
+    margin: 0 auto;
+}
+
+.about-me{
+    font-family: "Hiragino Maru Gothic ProN";
+    font-size: 53px;
+    line-height: 59px;
+    color: #424242;
+    padding-top: 150px;
+    padding-bottom: 50px;
+}
+
+.about img{
+    width: 25%;
+    height: 25%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+.introduction-wrapper{
+    font-family: "Hiragino Maru Gothic ProN";
+    color: #424242;
+    width: 31%;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: 40px;
+    padding-top: 20px;
+}
+
+.introduction-wrapper h2{
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.fa-github{
+    color: #252A2B;
+    background-color: white;
+    border-radius: 100%;
+    font-size: 2.5em;
+    display: inline-block;
+    margin-top: 20px;
+}
