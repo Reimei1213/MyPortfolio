@@ -9,6 +9,10 @@ html, body{height: 100%; margin: 0; z-index: 1;}
     text-align: center;
 }
 
+.space{
+    padding-bottom: 150px;
+}
+
 .fixed-bg {
     min-height: 100vh;
     background-attachment: fixed;
@@ -93,15 +97,20 @@ header{
     height: calc(100% - 70px);
 }
 
+.top-banner-wrapper{
+    padding: 50px 100px;
+}
+
 .top-banner h1{
-    padding-top: 350px;
     font-family: "Zapfino";
     color: white;
     color: #fff;
+    padding: 75px;
+    font-size: 50px;
 }
 
 .about{
-    height: 100%;
+
 }
 
 .about-wrapper{
@@ -184,13 +193,6 @@ header{
 
 .portfolio-item img {
     height: 200px;
-    width: auto;
-    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
-    border-radius: 5px;
-}
-
-.portfolio-item img:hover {
-    height: 210px;
     width: auto;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     border-radius: 5px;
