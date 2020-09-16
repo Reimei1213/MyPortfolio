@@ -1,3 +1,5 @@
+*{box-sizing: border-box;}
+
 html, body{height: 100%; margin: 0; z-index: 1;}
 
 .container{
@@ -107,7 +109,7 @@ header{
     margin: 0 auto;
 }
 
-.about-me{
+.title{
     font-family: "Hiragino Maru Gothic ProN";
     font-size: 53px;
     line-height: 59px;
@@ -151,6 +153,45 @@ header{
     margin-top: 20px;
 }
 
+.clear{
+    clear: left;
+}
+
 .portfolio{
-    height: 100%;
+
+    background-color: #FAFAFA;
+}
+
+.portfolio-items-wrapper{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.portfolio-item{
+    flex: auto;
+    display: inline-block;
+    float: left;
+    padding-bottom: 50px;
+}
+
+.item-name{
+    font-family: "Hiragino Maru Gothic ProN";
+    padding-bottom: 20px;
+    color: #424242;
+    font-size: 20px;
+}
+
+.portfolio-item img {
+    height: 200px;
+    width: auto;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    border-radius: 5px;
+}
+
+.portfolio-item img:hover {
+    height: 210px;
+    width: auto;
+    box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
+    border-radius: 5px;
 }
