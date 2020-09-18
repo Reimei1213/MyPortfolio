@@ -190,15 +190,18 @@ header{
 
 .portfolio-items-wrapper{
     margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
 }
 
 .portfolio-item{
-    flex: auto;
-    display: inline-block;
+    /*flex: auto;
     float: left;
     padding-bottom: 50px;
+    display: flex;
+    align-items: center;*/
+    margin: 0 auto;
+    text-align: center;
+    display: inline-block;
+    padding: 30px 20px;
 }
 
 .item-name{
@@ -233,6 +236,15 @@ header{
 
 .tree-item-img{
     display: flex;
+    position: relative;
+}
+
+.tree-item-img h3{
+    position: absolute;
+    font-family: "Hiragino Maru Gothic ProN";
+    top: 90px;
+    left: -150px;
+    color: #424242;
 }
 
 .tree-border-set{
@@ -244,14 +256,6 @@ header{
     width: 20%;
     height: 125px;
     position: relative;
-}
-
-.tree-conect-border h3{
-    position: absolute;
-    font-family: "Hiragino Maru Gothic ProN";
-    bottom: 5%;
-    left: 5%;
-    color: #424242;
 }
 
 .woodwork{
@@ -343,7 +347,7 @@ footer h2{
         left: 0;
         right: 0;
         height: auto;
-        background-color: blue;
+        background-color: white;
         z-index: 4;
     }
 
@@ -363,6 +367,7 @@ footer h2{
         position: relative;
         float: right;
         cursor: pointer;
+        margin: 25px 0;
     }
 
     .hamburger-menu span{
@@ -383,5 +388,38 @@ footer h2{
 
     .hamburger-menu span:nth-child(3){
         top: 100%;
+    }
+
+    .about-wrapper{
+        display: block;
+    }
+
+    .about img{
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    .introduction-wrapper{
+        width: 100%;
+    }
+
+    .portfolio-item{
+        display: block;
+    }
+
+    .portfolio-item img{
+        width: 80%;
+        height: auto;
+    }
+
+    .tree-item h3{
+        font-size: 20px;
+        left: -100px;
+    }
+
+    .tree-item-text{
+        height: 100px;
+        margin-top: 40px;
     }
 }

@@ -38,7 +38,7 @@ $(function() {
 
     $('.header-list-item').on('click', function (){
         $('nav').removeClass('is-opened');
-        $(this).removeClass('is-enable');
+        $('.header-shadow').removeClass('is-enable');
         $('body').css('overflow-y', 'auto');
     });
 });
