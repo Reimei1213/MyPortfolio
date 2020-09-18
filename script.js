@@ -7,4 +7,20 @@ $(function() {
             'scrollTop' : position
         }, 500);
     });
+
+    $("#contactForm").validate({
+        rules: {
+            name: {
+                required: "*お名前を入力してください", // 入力必須チェック
+                rangelength: [1, 50], // 最小１文字、最大５０文字
+            },
+            email: {
+                required: "*メールアドレスを入力してください", // 入力必須チェック
+                email: "*正しいメールアドレス形式で入力してください", // メールアドレス形式チェック
+            },
+            message: {
+                required: "*メッセージを入力してください" // 入力必須チェック
+            }
+        }
+    });
 });
