@@ -191,9 +191,105 @@ header{
     font-size: 20px;
 }
 
+
 .portfolio-item img {
     height: 200px;
     width: auto;
     box-shadow: 0 10px 25px 0 rgba(0, 0, 0, .5);
     border-radius: 5px;
+}
+
+.tree-wrapper{
+    border-left: 10px solid saddlebrown;
+    height: 100%;
+    text-align: left;
+    margin-left: 10%;
+}
+
+.tree-wrapper li{
+    list-style: none;
+}
+
+.tree-item{
+    padding-top: 75px;
+}
+
+.tree-item-img{
+    display: flex;
+}
+
+.tree-border-set{
+    height: 50%;
+}
+
+.tree-conect-border{
+    border-bottom: 8px solid saddlebrown;
+    width: 20%;
+    height: 125px;
+    position: relative;
+}
+
+.tree-conect-border h3{
+    position: absolute;
+    font-family: "Hiragino Maru Gothic ProN";
+    bottom: 5%;
+    left: 5%;
+    color: #424242;
+}
+
+.woodwork{
+    border: 8px solid saddlebrown;
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    object-position:0px 0px;
+}
+
+.badminton{
+    border: 8px solid saddlebrown;
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    object-position:-80px 0px;
+}
+
+.kosen{
+    border: 8px solid saddlebrown;
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    object-position:-70px 0px;
+}
+
+.drone{
+    border: 8px solid saddlebrown;
+    width:250px;
+    height:250px;
+    object-fit:cover;
+    border-radius:50%;
+    object-position:-60px 0px;
+}
+
+
+.tree-item-text{
+    display: flex;
+    height: 125px;
+    margin-top: 10px;
+    padding-left: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.tree-item-text h3{
+    width: 100%;
+    background-color: rgba(139, 69, 19, 0.7);
+    border-left: 8px solid saddlebrown;
+    color: white;
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-size: 28px;
+    font-weight: normal;
+    padding: 35px 30px;
 }
