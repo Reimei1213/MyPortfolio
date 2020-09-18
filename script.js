@@ -23,4 +23,14 @@ $(function() {
             }
         }
     });
+
+    $('.hamburger-menu').on('click', function (){
+        $('nav').addClass('is-opened');
+        $('.header-shadow').addClass('is-enable');
+    });
+
+    $('.header-shadow').on('click', function (){
+        $('nav').removeClass('is-opened');
+        $(this).removeClass('is-enable');
+    });
 });

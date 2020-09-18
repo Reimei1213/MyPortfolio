@@ -34,6 +34,21 @@ header{
     z-index: 10;
 }
 
+.header-shadow{
+    position: absolute;
+    z-index: 3;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.2);
+    display: none;
+}
+
+.header-contents{
+    position: relative;
+}
+
 .header-left{
     float: left;
 }
@@ -310,4 +325,62 @@ footer h2{
     color: white;
     font-size: 14px;
     padding-top: 40px;
+}
+
+.hamburger-menu{
+    display: none;
+}
+
+
+
+@media screen and (max-width:480px){
+
+    nav{
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        height: auto;
+        background-color: blue;
+        z-index: 4;
+    }
+
+    .is-opened{
+        display: block;
+    }
+
+    .is-enable{
+        display: block;
+    }
+
+
+    .hamburger-menu{
+        display: block;
+        width: 30px;
+        height: 20px;
+        position: relative;
+        float: right;
+        cursor: pointer;
+    }
+
+    .hamburger-menu span{
+        height: 2px;
+        width: 20px;
+        background-color: #252A2B;
+        position: absolute;
+        left: 0;
+    }
+
+    .hamburger-menu span:nth-child(1){
+        top: 0;
+    }
+
+    .hamburger-menu span:nth-child(2){
+        top: 49%;
+    }
+
+    .hamburger-menu span:nth-child(3){
+        top: 100%;
+    }
 }
