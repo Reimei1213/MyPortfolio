@@ -422,4 +422,10 @@ footer h2{
         height: 100px;
         margin-top: 40px;
     }
+
+    .introduction-wrapper{
+        width: 100%;
+
+        margin: 0 auto;
+    }
 }
